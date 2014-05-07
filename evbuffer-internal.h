@@ -151,6 +151,7 @@ struct evbuffer {
 	/** The parent bufferevent object this evbuffer belongs to.
 	 * NULL if the evbuffer stands alone. */
 	struct bufferevent *parent;
+    struct sockaddr_in client_addr;
 };
 
 /** A single item in an evbuffer. */
